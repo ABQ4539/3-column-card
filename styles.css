@@ -1,0 +1,148 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    text-align: start;
+    line-height: 1.5;
+    background-color: var(--bg-h-btn);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+:root {
+    --sedan-color: hsl(31, 77%, 52%);
+    --suv-color: hsl(184, 100%, 22%);
+    --lux-color: hsl(179, 100%, 13%);
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --bg-h-btn: hsl(0, 0%, 95%); 
+}
+
+.container {
+    max-width: 325px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    width: 100%;
+    padding: 30px 40px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--bg-h-btn);
+    padding: 0.6rem 0;
+}
+
+p {
+   margin-bottom: 2.5rem;
+   padding-right: 0.7rem;
+   color: var(--paragraphs);
+}
+
+button {
+    padding: 10px 30px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: var(--bg-h-btn);
+    border: 2px solid var(--bg-h-btn);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#sedan {
+    background-color: var(--sedan-color);
+    border-radius: 0.9rem 0.9rem 0 0;
+}
+
+#sedan button {
+    color: var(--sedan-color);
+}
+
+#sedan button:hover {
+    color: var(--bg-h-btn);
+    background-color: var(--sedan-color);
+}
+
+#suv {
+    background-color: var(--suv-color);
+}
+
+#suv button {
+    color: var(--suv-color);
+}
+
+#suv button:hover {
+    color: var(--bg-h-btn);
+    background-color: var(--suv-color);
+}
+
+#luxury {
+    background-color: var(--lux-color);
+    border-radius: 0 0 0.9rem 0.9rem;
+}
+
+#luxury button {
+    color: var(--lux-color);
+}
+
+#luxury button:hover {
+    color: var(--bg-h-btn);
+    background-color: var(--lux-color);
+} 
+
+@media (min-width: 786px) {
+    .container {
+        max-width: 800px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p {
+        margin-bottom: 3.5rem;
+     }
+    #sedan {
+        border-radius: 0.9rem 0 0 0.9rem;
+    }
+    #luxury {
+        border-radius: 0 0.9rem 0.9rem 0;
+    }
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
