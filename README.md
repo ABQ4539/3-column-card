@@ -27,9 +27,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](images/Screenshot1.png)
-![](images/Screenshot2.png)
-![](images/Screenshot3.png)
+![alt Desktop design](./images/Screenshot1.png))
+
+![alt First half of mobile design](./images/Screenshot2.png)
+
+![Second half of mobile design](./images/Screenshot3.png)
 
 ### Links
 
